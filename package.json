@@ -1,0 +1,24 @@
+{
+  "name": "network-browser",
+  "version": "1.0.0",
+  "description": "Network Browser",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.10.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/praphull27/network-browser.git"
+  },
+  "author": "Praphull Kumar <praphull27@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praphull27/network-browser/issues"
+  },
+  "homepage": "https://github.com/praphull27/network-browser"
+}

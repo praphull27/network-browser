@@ -141,8 +141,8 @@ function drawGraph() {
         .on('tick', tick);
 
     graph.svg = d3.select('#graph').append('svg')
-        .attr('width' , window.innerWidth  + graph.margin.left + graph.margin.right)
-        .attr('height', window.innerHeight + graph.margin.top  + graph.margin.bottom)
+        .attr('width' , graph.width  + graph.margin.left + graph.margin.right)
+        .attr('height', graph.height + graph.margin.top  + graph.margin.bottom)
       .append('g')
         .attr('transform', 'translate(' + graph.margin.left + ',' + graph.margin.top + ')');
 

@@ -144,8 +144,13 @@ function drawGraph() {
         .attr('width' , graph.width  + graph.margin.left + graph.margin.right)
         .attr('height', graph.height + graph.margin.top  + graph.margin.bottom)
       .append('g')
-        .attr('transform', 'translate(' + graph.margin.left + ',' + graph.margin.top + ')');
+        .attr('transform', 'translate(' + graph.margin.left + ',' + graph.margin.top + ')')
+        .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
+  .append("g");
 
+  function zoom() {
+  graph.svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+}
     graph.svg.append('defs').selectAll('marker')
         .data(['end'])
       .enter().append('marker')

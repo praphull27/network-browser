@@ -3,7 +3,7 @@
     stroke: #666;
     stroke-width: 1.5px;
     opacity: .7;
-    marker-end: url(#end);
+    /*marker-end: url(#end);*/
     
     transition: opacity 250ms;
     -webkit-transition: opacity 250ms;
